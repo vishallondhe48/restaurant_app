@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url('./images/siniz-kim-aWWl29-VX7Y-unsplash.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	height: 400vh;
+}
+
+/* navbar */
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 15vw;
+}
+.navbar #logo {
+	padding: 1rem;
+
+	/*text-decoration: none;
+	color: var(--txt-color);
+	font-family: 'Cormorant Garamond', serif; */
+}
+.navbar ul {
+	display: flex;
+	width: 20vw;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 1rem;
+	font-family: sans-serif;
+}
+.nav-btn {
+	font-family: sans-serif;
+	color: rgb(241, 241, 241);
+	text-decoration: none;
+	transform: translateX(0);
+	padding: 0.3rem;
+	transition: transform 0.5s ease-in-out;
+}
+.nav-btn::after {
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: rgb(0, 225, 255);
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	border-radius: 10px;
+	transition: all 500ms ease;
+}
+.nav-btn:hover::after {
+	left: 0%;
+	width: 100%;
+}
+h1 {
+	display: flex;
+	position: absolute;
+	width: 100%;
+	justify-content: center;
+	height: 70vh;
+	align-items: center;
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 4rem;
+	color: rgb(255, 255, 255);
+	animation: title-load 0.5s ease-in-out;
+}
+
+/* page */
+
+#logo-big {
+	margin-top: 5vh;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	z-index: -1;
+}
+
+@keyframes title-load {
+	0% {
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
