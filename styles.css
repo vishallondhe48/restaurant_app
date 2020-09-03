@@ -169,28 +169,25 @@ img {
 .contact-icon a {
 	text-decoration: none;
 	color: black;
-	padding: 0rem 1.5rem;
+	padding: 0rem 1.5rem 2rem 1.5rem;
 }
 .phone-no {
-	margin-top: 3rem;
-	margin-left: 30vw;
 	text-align: center;
 	display: flex;
 	justify-content: space-around;
-	width: 40vw;
 	font-family: 'Roboto', sans-serif;
 }
 #phone-no {
-	margin-left: 38.5vw;
+	margin-left: 40.3vw;
 	font-family: 'Roboto', sans-serif;
 }
 #email-id {
-	margin: 1.2rem;
+	padding: 2rem;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 }
 #created {
-	padding: 1.2rem;
+	padding: 0 2rem 1.2rem 2rem;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
 }
