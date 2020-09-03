@@ -1,92 +1,196 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&family=Roboto+Mono&display=swap');
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-
 body {
-	background-image: url('./images/siniz-kim-aWWl29-VX7Y-unsplash.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-	height: 400vh;
+	overflow-x: hidden;
+	--heading-color: #aa6b6b;
+	--heading-fontSize: 2rem;
+	--heading-padding: 3rem;
 }
-
 /* navbar */
-.navbar {
+nav {
 	display: flex;
+	position: fixed;
+	top: 0;
+	background: white;
+	width: 100%;
 	justify-content: space-between;
-	margin: 0 15vw;
 }
-.navbar #logo {
-	padding: 1rem;
-
-	/*text-decoration: none;
-	color: var(--txt-color);
-	font-family: 'Cormorant Garamond', serif; */
-}
-.navbar ul {
-	display: flex;
-	width: 20vw;
-	justify-content: space-around;
-	align-items: center;
-	font-size: 1rem;
-	font-family: sans-serif;
-}
-.nav-btn {
-	font-family: sans-serif;
-	color: rgb(241, 241, 241);
+.brand-logo {
 	text-decoration: none;
-	transform: translateX(0);
-	padding: 0.3rem;
-	transition: transform 0.5s ease-in-out;
+	color: #b99c9c;
+	padding: 3rem;
+	font-size: 2.3rem;
+	font-family: 'Roboto Mono', monospace;
 }
-.nav-btn::after {
-	content: '';
-	width: 0%;
-	height: 2px;
-	background: rgb(0, 225, 255);
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	border-radius: 10px;
-	transition: all 500ms ease;
-}
-.nav-btn:hover::after {
-	left: 0%;
-	width: 100%;
-}
-h1 {
+.nav-elements {
+	width: 30vw;
+
 	display: flex;
-	position: absolute;
-	width: 100%;
-	justify-content: center;
-	height: 70vh;
 	align-items: center;
-	font-family: 'Cormorant Garamond', serif;
-	font-size: 4rem;
-	color: rgb(255, 255, 255);
-	animation: title-load 0.5s ease-in-out;
+	justify-content: space-around;
+	list-style: none;
+}
+.nav-elements a {
+	text-decoration: none;
+	color: black;
+	font-family: 'Roboto', sans-serif;
 }
 
-/* page */
+/* homepage-pic */
+.container {
+	margin-top: 25vh;
+	width: 100vw;
+	height: 80vh;
+	background-image: url('./images/brooke-lark-08bOYnH_r_E-unsplash.jpg');
+	font-family: 'Raleway', sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+}
+.container .title {
+	margin-right: 10vw;
+}
+.container .title {
+	font-size: 2rem;
+}
+.container a {
+	margin-top: 2rem;
+	text-decoration: none;
+	margin-right: 27vw;
+	font-size: 1.2rem;
+	padding: 0.5rem 1rem;
+	background: rgba(255, 49, 49, 0.671);
+	color: white;
+}
 
-#logo-big {
-	margin-top: 5vh;
-	position: absolute;
+/* img-grid */
+
+.img-section h4 {
+	font-size: var(--heading-fontSize);
+	font-family: 'Roboto', sans-serif;
+	color: var(--heading-color);
+	text-align: center;
+	padding: var(--heading-padding);
+}
+.img-container img {
+	width: 47.5%;
+	margin: 1rem;
+}
+.img-container {
+	margin: 0rem 0rem;
+	display: flex;
+	flex-wrap: wrap;
+	flex: auto;
+}
+
+/* visit section */
+.visit {
+	background: #f0f8cf;
+	padding: 1.2rem;
+}
+.visit-section {
+	margin: 0rem 5vw;
+	font-family: 'Roboto', sans-serif;
+}
+.visit-section h4 {
+	color: var(--heading-color);
+	font-size: var(--heading-fontSize);
+	padding: 3rem 0rem;
+	margin-left: 3rem;
+}
+.visit-section .place {
+	padding: 0.5rem 0;
+	font-size: 1.2rem;
+}
+.visit-section .address {
+	font-size: 1.1rem;
+	width: 20vw;
+}
+.total-places {
+	display: flex;
+	flex-wrap: wrap;
+	flex: auto;
+}
+.individual-place {
+	margin: 3rem;
+}
+/* about-section */
+.about-section {
+	display: flex;
+	flex-wrap: wrap;
+	flex: auto;
+	padding: 3rem 0rem;
+}
+
+img {
+	max-width: 60vw;
+
+	margin: 1rem;
+}
+.abt-txt {
+	display: flex;
+	flex-direction: column;
+	width: 30vw;
+}
+.abt-txt h4 {
+	font-size: var(--heading-fontSize);
+	color: var(--heading-color);
+	font-family: 'Roboto', sans-serif;
+	padding: 2rem;
+	text-align: center;
+	margin: 0rem 3rem;
+}
+.abt-txt p {
+	text-align: justify;
+	padding: 1rem;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2rem;
+}
+/* CONTACT-SECTION */
+.contact-section {
+	background: #f3f3d9;
+}
+.contact-section h4 {
+	color: var(--heading-color);
+	padding: var(--heading-padding);
+	font-size: var(--heading-fontSize);
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+.contact-icon {
 	display: flex;
 	justify-content: center;
-	width: 100%;
-	z-index: -1;
 }
-
-@keyframes title-load {
-	0% {
-		opacity: 0;
-		transform: translateY(-100%);
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
+.contact-icon a {
+	text-decoration: none;
+	color: black;
+	padding: 0rem 1.5rem;
+}
+.phone-no {
+	margin-top: 3rem;
+	margin-left: 30vw;
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	width: 40vw;
+	font-family: 'Roboto', sans-serif;
+}
+#phone-no {
+	margin-left: 38.5vw;
+	font-family: 'Roboto', sans-serif;
+}
+#email-id {
+	margin: 1.2rem;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+#created {
+	padding: 1.2rem;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
 }
