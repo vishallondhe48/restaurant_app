@@ -18,6 +18,7 @@ nav {
 	background: white;
 	width: 100%;
 	justify-content: space-between;
+	box-shadow: 0 4px 4px rgba(0,0,0,.25);
 }
 .brand-logo {
 	text-decoration: none;
@@ -42,6 +43,8 @@ nav {
 
 /* homepage-pic */
 .container {
+	display: flex;
+
 	margin-top: 25vh;
 	width: 100vw;
 	height: 80vh;
@@ -190,4 +193,23 @@ img {
 	padding: 0 2rem 1.2rem 2rem;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* media queries */
+
+@media(max-width:768px){
+	
+	nav{
+		justify-content: space-evenly;
+	}
+	.brand-logo{
+		font-size: 28px;
+			
+	}
+	.nav-elements{
+		display: none;
+	}	
+	
 }
