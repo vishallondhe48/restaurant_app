@@ -34,8 +34,9 @@ body {
     }
 }
 .title {
-    font-size: 48px;
+    font-size: 2rem;
     font-weight: 500;
+    margin-bottom: 1.5rem;
 }
 
 .container {
@@ -143,7 +144,9 @@ nav {
 .hero-section {
     .wrapper {
         min-height: 100vh;
+        background: green;
 
+        margin-bottom: 1rem;
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
@@ -199,65 +202,130 @@ nav {
         }
     }
 }
-// .menu-section {
-//     position: relative;
 
-//     display: flex;
-//     flex-direction: column;
-//     min-height: 100vh;
+// menu-section
+.menu-section {
+    min-height: 100vh;
+    margin-bottom: 1rem;
+    .wrapper {
+        position: relative;
+        background: pink;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        .title {
+            padding-top: 15vh;
+        }
+        .image-gallery {
+            background: #fe4e00;
+            display: flex;
+            flex-direction: column;
 
-//     .image-gallery {
-//         display: grid;
-//         @media (min-width: 768px) and (max-width: 1439px) {
-//             grid-template-columns: repeat(2, 1fr);
-//         }
-//         @media (min-width: 1440px) and (max-width: 1800px) {
-//             grid-template-columns: repeat(3, 1fr);
-//         }
-//         .img {
-//             width: 320px;
-//             height: 250px;
-//             background-size: cover;
-//             background-repeat: no-repeat;
-//         }
-//         #img-1 {
-//             background-image: url(/images/1.png);
-//         }
-//         #img-2 {
-//             background-image: url(/images/2.png);
-//         }
-//         #img-3 {
-//             background-image: url(/images/3.png);
-//         }
-//         #img-4 {
-//             background-image: url(/images/4.png);
-//         }
-//     }
-// }
-// .contact-section {
-//     width: 100%;
-//     form {
-//         label {
-//             display: block;
-//         }
-//     }
-// }
+            .img {
+                width: auto;
+                height: 250px;
+                background-size: cover;
+                background-repeat: no-repeat;
 
-// footer {
-//     background: #1e1d1d;
-//     width: 100%;
-//     .contact-links-icons {
-//         padding: 1.5rem 0;
-//     }
-//     .credit {
-//         padding: 1rem;
-//         display: flex;
-//         justify-content: center;
-//         img {
-//             margin-right: 0.5rem;
-//         }
-//         p {
-//             color: #fff;
-//         }
-//     }
-// }
+                &:hover {
+                    transform: scale(1.2);
+                    transition: 0.5s ease;
+                }
+            }
+            #img-1 {
+                background-image: url(/images/1.png);
+            }
+            #img-2 {
+                background-image: url(/images/2.png);
+            }
+            #img-3 {
+                background-image: url(/images/3.png);
+            }
+            #img-4 {
+                background-image: url(/images/4.png);
+            }
+            #img-5 {
+                background-image: url(/images/4.png);
+            }
+        }
+    }
+    @media (min-width: 768px) {
+        .wrapper {
+            .image-gallery {
+                flex-direction: row;
+                .img {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
+.about-section {
+    .wrapper {
+        background: #fe4e00;
+        display: grid;
+        min-height: 100vh;
+
+        padding-top: 30vh;
+        margin-bottom: 15vh;
+
+        .text-section {
+            background: crimson;
+        }
+        @media (min-width: 1024px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            .img-section {
+                width: 500px;
+                height: 500px;
+                background: pink;
+                background-image: url(/images/about.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+
+.contact-section {
+    width: 100%;
+    min-height: 100vh;
+    background: lightgreen;
+    .wrapper {
+        .title {
+            padding-top: 15vh;
+        }
+        form {
+            label {
+                display: block;
+                margin-bottom: 0.5rem;
+            }
+            input {
+                background: lightcoral;
+                border: none;
+                padding: 0.5rem;
+                margin-bottom: 0.8rem;
+            }
+        }
+    }
+}
+
+footer {
+    background: #1e1d1d;
+    width: 100%;
+    .contact-links-icons {
+        padding: 1.5rem 0;
+    }
+    .credit {
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        img {
+            margin-right: 0.5rem;
+        }
+        p {
+            color: #fff;
+        }
+    }
+}
