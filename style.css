@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300;500&display=swap");
 html {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 * {
@@ -176,7 +176,6 @@ nav .active {
 
 .hero-section .wrapper {
   min-height: 100vh;
-  background: green;
   margin-bottom: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -258,7 +257,6 @@ nav .active {
 
 .menu-section .wrapper {
   position: relative;
-  background: pink;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -274,7 +272,6 @@ nav .active {
 }
 
 .menu-section .wrapper .image-gallery {
-  background: #fe4e00;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,16 +328,11 @@ nav .active {
 }
 
 .about-section .wrapper {
-  background: #fe4e00;
   display: -ms-grid;
   display: grid;
   min-height: 100vh;
   padding-top: 30vh;
   margin-bottom: 15vh;
-}
-
-.about-section .wrapper .text-section {
-  background: crimson;
 }
 
 @media (min-width: 1024px) {
@@ -352,7 +344,6 @@ nav .active {
   .about-section .wrapper .img-section {
     width: 500px;
     height: 500px;
-    background: pink;
     background-image: url(/images/about.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -362,7 +353,6 @@ nav .active {
 .contact-section {
   width: 100%;
   min-height: 100vh;
-  background: lightgreen;
 }
 
 .contact-section .wrapper .title {
@@ -375,7 +365,7 @@ nav .active {
 }
 
 .contact-section .wrapper form input {
-  background: lightcoral;
+  background: #c4c4c4;
   border: none;
   padding: 0.5rem;
   margin-bottom: 0.8rem;

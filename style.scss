@@ -8,12 +8,12 @@ $heading: #1e1d1d;
 $footer-background: #1e1d1d;
 $cta: #fe4e00;
 $headerfont-size: 30px;
-$headingfont-size: 48px;
+$headingfont-size: 2rem;
 $font-logo: "Fredoka One", cursive;
 $font-body: "Poppins", sans-serif;
 
 html {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 * {
@@ -144,7 +144,6 @@ nav {
 .hero-section {
     .wrapper {
         min-height: 100vh;
-        background: green;
 
         margin-bottom: 1rem;
         display: flex;
@@ -209,7 +208,7 @@ nav {
     margin-bottom: 1rem;
     .wrapper {
         position: relative;
-        background: pink;
+
         display: flex;
         flex-direction: column;
         min-height: 100vh;
@@ -217,7 +216,6 @@ nav {
             padding-top: 15vh;
         }
         .image-gallery {
-            background: #fe4e00;
             display: flex;
             flex-direction: column;
 
@@ -263,23 +261,19 @@ nav {
 
 .about-section {
     .wrapper {
-        background: #fe4e00;
         display: grid;
         min-height: 100vh;
 
         padding-top: 30vh;
         margin-bottom: 15vh;
 
-        .text-section {
-            background: crimson;
-        }
         @media (min-width: 1024px) {
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 10px;
             .img-section {
                 width: 500px;
                 height: 500px;
-                background: pink;
+
                 background-image: url(/images/about.png);
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -291,7 +285,7 @@ nav {
 .contact-section {
     width: 100%;
     min-height: 100vh;
-    background: lightgreen;
+
     .wrapper {
         .title {
             padding-top: 15vh;
@@ -302,7 +296,7 @@ nav {
                 margin-bottom: 0.5rem;
             }
             input {
-                background: lightcoral;
+                background: #c4c4c4;
                 border: none;
                 padding: 0.5rem;
                 margin-bottom: 0.8rem;
