@@ -38,6 +38,13 @@ body a {
   }
 }
 
+.cta {
+  color: #fff;
+  background: #fe4e00;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
 nav .wrapper {
   position: fixed;
   left: 0;
@@ -199,13 +206,6 @@ nav .active {
   margin-bottom: 1rem;
 }
 
-.hero-section .wrapper .text-section .cta {
-  color: #fff;
-  background: #fe4e00;
-  padding: 10px 20px;
-  border-radius: 10px;
-}
-
 .hero-section .wrapper .img-section {
   padding-top: 10vh;
   display: -webkit-box;
@@ -352,11 +352,7 @@ nav .active {
 
 .contact-section {
   width: 100%;
-  min-height: 100vh;
-}
-
-.contact-section .wrapper .title {
-  padding-top: 15vh;
+  padding: 15vh 0;
 }
 
 .contact-section .wrapper form label {
@@ -369,6 +365,13 @@ nav .active {
   border: none;
   padding: 0.5rem;
   margin-bottom: 0.8rem;
+}
+
+.contact-section .wrapper form button {
+  border: none;
+  padding: none;
+  text-transform: uppercase;
+  font-size: 18px;
 }
 
 footer {

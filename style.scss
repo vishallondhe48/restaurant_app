@@ -45,7 +45,12 @@ body {
         margin: 0 10vw;
     }
 }
-
+.cta {
+    color: #fff;
+    background: $cta;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
 // nav
 
 nav {
@@ -158,12 +163,6 @@ nav {
             }
             .text {
                 margin-bottom: 1rem;
-            }
-            .cta {
-                color: #fff;
-                background: $cta;
-                padding: 10px 20px;
-                border-radius: 10px;
             }
         }
         .img-section {
@@ -284,12 +283,9 @@ nav {
 
 .contact-section {
     width: 100%;
-    min-height: 100vh;
+    padding: 15vh 0;
 
     .wrapper {
-        .title {
-            padding-top: 15vh;
-        }
         form {
             label {
                 display: block;
@@ -297,9 +293,16 @@ nav {
             }
             input {
                 background: #c4c4c4;
+
                 border: none;
                 padding: 0.5rem;
                 margin-bottom: 0.8rem;
+            }
+            button {
+                border: none;
+                padding: none;
+                text-transform: uppercase;
+                font-size: 18px;
             }
         }
     }
