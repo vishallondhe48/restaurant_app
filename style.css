@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300;500&display=swap");
+html {
+  font-size: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background: #f7f7f7;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  height: 400vh;
+}
+
+body a {
+  text-decoration: none;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.container {
+  margin: 0 5vw;
+}
+
+@media (min-width: 768px) {
+  .container {
+    margin: 0 10vw;
+  }
+}
+
+nav .wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav .logo {
+  color: #e9190f;
+  padding: 1rem 0;
+  font-family: "Fredoka One", cursive;
+  font-size: 30px;
+}
+
+nav .nav-links {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #e9190f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  height: 100vh;
+  width: 100vw;
+  -webkit-transform: translateX(300%);
+          transform: translateX(300%);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+nav .nav-links a {
+  color: #fff;
+}
+
+nav .nav-mobile {
+  opacity: 1;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+
+nav .toggle-btn {
+  z-index: 1000000000000;
+  position: absolute;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .toggle-btn #btn {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+nav .closed {
+  height: 30px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+nav .active {
+  height: 36px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+@media (min-width: 768px) {
+  nav .wrapper {
+    width: 80%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  nav .nav-links {
+    position: relative;
+    opacity: 1;
+    background: transparent;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    height: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: auto;
+  }
+  nav .nav-links a {
+    padding: 0 1rem;
+    color: #000;
+  }
+  nav .nav-links a:last-of-type {
+    padding: none;
+  }
+  nav .toggle-btn {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

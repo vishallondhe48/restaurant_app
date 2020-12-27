@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&family=Roboto+Mono&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&family=Roboto+Mono&display=swap');
 * {
 	margin: 0;
 	padding: 0;
@@ -11,7 +11,7 @@ body {
 	--heading-padding: 3rem;
 }
 /* navbar */
-nav {
+/* nav {
 	display: flex;
 	position: fixed;
 	top: 0;
@@ -41,10 +41,12 @@ nav {
 	font-family: 'Roboto', sans-serif;
 }
 
-/* homepage-pic */
-.container {
-	display: flex;
+@media(max-width:576px){
 
+} */
+/* homepage-pic */
+/* .container {
+	display: flex;
 	margin-top: 25vh;
 	width: 100vw;
 	height: 80vh;
@@ -72,7 +74,7 @@ nav {
 }
 
 /* img-grid */
-
+/* 
 .img-section h4 {
 	font-size: var(--heading-fontSize);
 	font-family: 'Roboto', sans-serif;
@@ -85,14 +87,13 @@ nav {
 	margin: 1rem;
 }
 .img-container {
-	margin: 0rem 0rem;
+	
 	display: flex;
 	flex-wrap: wrap;
-	flex: auto;
-}
+} */
 
 /* visit section */
-.visit {
+/* .visit {
 	background: #f0f8cf;
 	padding: 1.2rem;
 }
@@ -121,9 +122,9 @@ nav {
 }
 .individual-place {
 	margin: 3rem;
-}
+} */
 /* about-section */
-.about-section {
+/* .about-section {
 	display: flex;
 	flex-wrap: wrap;
 	flex: auto;
@@ -153,9 +154,9 @@ img {
 	padding: 1rem;
 	font-family: 'Roboto', sans-serif;
 	font-size: 1.2rem;
-}
+} */
 /* CONTACT-SECTION */
-.contact-section {
+/* .contact-section {
 	background: #f3f3d9;
 }
 .contact-section h4 {
@@ -193,23 +194,4 @@ img {
 	padding: 0 2rem 1.2rem 2rem;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
-}
-
-
-
-/* media queries */
-
-@media(max-width:768px){
-	
-	nav{
-		justify-content: space-evenly;
-	}
-	.brand-logo{
-		font-size: 28px;
-			
-	}
-	.nav-elements{
-		display: none;
-	}	
-	
-}
+} */

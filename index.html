@@ -4,16 +4,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-        crossorigin="anonymous" />
-    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="stylesheet" href="./style.css">
     <script defer src="./app.js"></script>
-    <title>vesuvio</title>
+    <title>foodys</title>
 </head>
 
 <body>
     <nav>
+        <div class="wrapper container">
+            <a href="#" class="logo">foodys</a>
+            <div class="nav-links" id="nav-links">
+                <a href="#">menu</a>
+                <a href="#">about</a>
+                <a href="#">contact</a>
+            </div>
+
+            <div id='toggler' class="toggle-btn closed">
+                <svg width="37" height="15" viewBox="0 0 37 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.674618 11.9005C4.55348 -1.46001 32.4201 -3.18378 36.299 10.1767C37.4251 14.0556 36.6677 14.1989 36.6677 14.1989H1.04333C1.04333 14.1989 -0.451503 15.7794 0.674618 11.9005Z"
+                        fill="#1E1D1D" />
+                </svg>
+                <svg width="36" height="4" viewBox="0 0 36 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.043335 1.92814C0.043335 1.05546 0.750776 0.348022 1.62345 0.348022H34.0876C34.9603 0.348022 35.6677 1.05546 35.6677 1.92814C35.6677 2.80081 34.9603 3.50825 34.0876 3.50825H1.62345C0.750777 3.50825 0.043335 2.80081 0.043335 1.92814Z"
+                        fill="#1E1D1D" />
+                </svg>
+                <svg width="36" height="11" viewBox="0 0 36 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0.043335 0.65744H35.6677V5.54143C35.6677 8.55612 33.2238 11 30.2091 11H5.50191C2.48722 11 0.043335 8.55612 0.043335 5.54143V0.65744Z"
+                        fill="#1E1D1D" />
+                </svg>
+
+
+                <button id="btn">click me</button>
+
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- hero section -->
+
+    <!-- <div class="hero-section">
+        <div class="container">
+            <div class="text-section">
+                <h2 class="heading">Get your food</h2>
+                <p class="text">Best food in the world</p>
+                <a href="#" class="cta">check now</a>
+            </div>
+            <div class="img-section">
+                <img src="./images/Hero.png" alt="">
+            </div>
+        </div>
+    </div>
+ -->
+
+    <!-- menu-section -->
+
+    <!-- <div class="menu-section">
+        <div class="container">
+            <p class="title">New</p>
+            <div class="image-gallery">
+                <div id="img-1" class="img"></div>
+                <div id="img-2" class="img"></div>
+                <div id="img-3" class="img"></div>
+            </div>
+            <div class="image-gallery">
+                <div id="img-3" class="img"></div>
+                <div id="img-4" class="img"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="about-section">
+        <div class="container">
+            <p class="title">About us</p>
+            <p class="text">
+                Restaurant Demo, opened in 2003, is a dynamic, food driven restaurant that focuses on the
+                elegance of cooking and a unique dining experience. This down-to-earth restaurant has been granted one
+                Michelin Star since 2007. Demo's passion and dedication to food with its laidback integration gives
+                customers an exciting evening every single time.
+            </p>
+        </div>
+    </div>
+
+ -->
+
+    <!-- contact section -->
+
+    <!-- <div class="contact-section ">
+        <div class="container">
+            <p class="title">
+                Book your
+                table
+            </p>
+            <form action="">
+                <p class="label"> <label for="">Name:</label></p>
+                <input type="text">
+                <p class="label"> <label for="">no of persons:</label></p>
+                <input type="text">
+                <p class="label"> <label for="">timing and day:</label></p>
+                <input type="text">
+                <p class="label"> <label for="">contact:</label></p>
+                <input type="text">
+
+            </form>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="contact-links-icons">
+                <a href="#"><img src="./images/linkedin.png" alt=""></a>
+
+                <a href="#"><img src="./images/yelpCircle.png" alt=""></a>
+
+                <a href="#"><img src="./images/twitterCircle.png" alt=""></a>
+
+                <a href="#"><img src="./images/facebook.png" alt=""></a>
+
+            </div>
+            <div class="credit">
+                <img src="./images/copyright.png" alt="">
+                <p class="text">vishal londhe website</p>
+            </div>
+        </div>
+
+    </footer>
+
+ -->
+
+
+    <!-- <nav>
         <a href="#" class="brand-logo">V E S U V I O</a>
         <ul class="nav-elements">
             <li><a href="#">Homepage</a></li>
@@ -29,7 +157,7 @@
         </div>
         <a href="#">view menu</a>
     </div>
-    <!-- food-image section -->
+    
     <div class="img-section">
         <h4>NEW</h4>
         <div class="img-container">
@@ -43,7 +171,7 @@
         </div>
         <h4>AND MORE...</h4>
     </div>
-    <!-- visit section -->
+    
     <div class="visit">
         <div class="visit-section">
             <h4>VISIT US</h4>
@@ -97,7 +225,7 @@
         <p id='phone-no'>+20-120547268</p>
         <p id='email-id'>Email Id: vesuvio03@gmail.com</p>
         <p id='created'>&copy Created by Vishal Londhe</p>
-    </div>
+    </div> -->
 </body>
 
 </html>
