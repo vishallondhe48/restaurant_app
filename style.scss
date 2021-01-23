@@ -21,6 +21,9 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     position: relative;
@@ -125,18 +128,20 @@ nav {
         .nav-links {
             position: relative;
             opacity: 1;
-
+            flex-direction: row;
             background: transparent;
             transform: translateX(0%);
             height: auto;
+            justify-content: space-between;
             flex-direction: row;
-            width: auto;
+            width: 20vw;
+
             a {
-                padding: 0 1rem;
                 color: #000;
-            }
-            a:last-of-type {
-                padding: 0;
+                opacity: 0.7;
+                &:hover {
+                    opacity: 1;
+                }
             }
         }
         .toggle-btn {
@@ -330,6 +335,11 @@ nav {
 footer {
     background: #1e1d1d;
     width: 100%;
+    color: #fff;
+    .note {
+        padding: 0.5rem 0;
+        font-weight: 400;
+    }
     .contact-links-icons {
         padding: 1.5rem 0;
     }
@@ -337,9 +347,7 @@ footer {
         padding: 1rem;
         display: flex;
         justify-content: center;
-        img {
-            margin-right: 0.5rem;
-        }
+
         p {
             color: #fff;
         }

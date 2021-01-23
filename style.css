@@ -10,6 +10,10 @@ html {
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   position: relative;
   background: #f7f7f7;
@@ -159,22 +163,26 @@ nav .active {
   nav .nav-links {
     position: relative;
     opacity: 1;
-    background: transparent;
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-    height: auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: auto;
+    background: transparent;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    height: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    flex-direction: row;
+    width: 20vw;
   }
   nav .nav-links a {
-    padding: 0 1rem;
     color: #000;
+    opacity: 0.7;
   }
-  nav .nav-links a:last-of-type {
-    padding: 0;
+  nav .nav-links a:hover {
+    opacity: 1;
   }
   nav .toggle-btn {
     display: none;
@@ -414,6 +422,12 @@ nav .active {
 footer {
   background: #1e1d1d;
   width: 100%;
+  color: #fff;
+}
+
+footer .note {
+  padding: 0.5rem 0;
+  font-weight: 400;
 }
 
 footer .contact-links-icons {
@@ -428,10 +442,6 @@ footer .credit {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-footer .credit img {
-  margin-right: 0.5rem;
 }
 
 footer .credit p {
